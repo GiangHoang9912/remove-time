@@ -19,7 +19,7 @@ jobs:
       - name: Build Tauri
         run: yarn tauri build
       - name: Upload MSI
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: windows-msi
           path: src-tauri/target/release/bundle/msi/*.msi
